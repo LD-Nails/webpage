@@ -1,0 +1,24 @@
+---
+import SampleSlider from "@/layouts/function-components/SampleSlider";
+const { our_work } = Astro.props;
+---
+
+<section class="reviews">
+  <div class="container">
+    <div class="row justify-between">
+      <div class="lg:col-6">
+        <h2>{our_work.title}</h2>
+      </div>
+      <div class="lg:col-4">
+        <p>
+          {our_work.description}
+        </p>
+      </div>
+    </div>
+    <div class="row mt-10">
+      <div class="col-12">
+        <SampleSlider list={our_work.example_list} client:load />
+      </div>
+    </div>
+  </div>
+</section>
