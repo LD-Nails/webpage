@@ -5,6 +5,7 @@
   "author": "themefisher",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
+  "type":"commonjs",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
